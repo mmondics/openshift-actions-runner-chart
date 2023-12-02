@@ -1,7 +1,7 @@
 appName: actions-runner
 
-runnerImage: quay.io/mmondics/openshift-actions-runner
-runnerTag: latest
+runnerImage: quay.io/mmondics/openshift-actions-runner-buildah
+runnerTag: f40-manifest
 
 # GitHub organization or user. Required.
 # If githubRepository is set, this must be the organization or user who owns that repository.
@@ -85,9 +85,9 @@ serviceAccountName: default
 # Adjust requests and limits depending on your resources,
 # and how heavyweight your workloads are.
 memoryRequest: "512Mi"
-memoryLimit: "1Gi"
-cpuRequest: "100m"
-cpuLimit: "250m"
+memoryLimit: "2Gi"
+cpuRequest: "200m"
+cpuLimit: "500m"
 
 # Enable custom cluster PKI loading
 # https://docs.openshift.com/container-platform/4.6/networking/configuring-a-custom-pki.html
