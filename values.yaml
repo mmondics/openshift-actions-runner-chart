@@ -1,7 +1,7 @@
 appName: actions-runner
 
 runnerImage: quay.io/mmondics/openshift-actions-runner-buildah
-runnerTag: v2-manifest
+runnerTag: v3.5-manifest
 
 # GitHub organization or user. Required.
 # If githubRepository is set, this must be the organization or user who owns that repository.
